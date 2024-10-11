@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+
+  <define/>
+
+  <materials>
+    <isotope N="54" Z="26" name="Fe540x620eed60df90">
+      <atom unit="g/mole" value="53.9396"/>
+    </isotope>
+    <isotope N="56" Z="26" name="Fe560x620eed60e020">
+      <atom unit="g/mole" value="55.9349"/>
+    </isotope>
+    <isotope N="57" Z="26" name="Fe570x620eed60e090">
+      <atom unit="g/mole" value="56.9354"/>
+    </isotope>
+    <isotope N="58" Z="26" name="Fe580x620eed60e140">
+      <atom unit="g/mole" value="57.9333"/>
+    </isotope>
+    <element name="Fe0x620eed5dccc0">
+      <fraction n="0.05845" ref="Fe540x620eed60df90"/>
+      <fraction n="0.91754" ref="Fe560x620eed60e020"/>
+      <fraction n="0.02119" ref="Fe570x620eed60e090"/>
+      <fraction n="0.00282" ref="Fe580x620eed60e140"/>
+    </element>
+    <isotope N="50" Z="24" name="Cr500x620eed60e370">
+      <atom unit="g/mole" value="49.946"/>
+    </isotope>
+    <isotope N="52" Z="24" name="Cr520x620eed60e430">
+      <atom unit="g/mole" value="51.9405"/>
+    </isotope>
+    <isotope N="53" Z="24" name="Cr530x620eed60e4a0">
+      <atom unit="g/mole" value="52.9407"/>
+    </isotope>
+    <isotope N="54" Z="24" name="Cr540x620eed60e4f0">
+      <atom unit="g/mole" value="53.9389"/>
+    </isotope>
+    <element name="Cr0x620eed60e540">
+      <fraction n="0.04345" ref="Cr500x620eed60e370"/>
+      <fraction n="0.83789" ref="Cr520x620eed60e430"/>
+      <fraction n="0.09501" ref="Cr530x620eed60e4a0"/>
+      <fraction n="0.02365" ref="Cr540x620eed60e4f0"/>
+    </element>
+    <isotope N="58" Z="28" name="Ni580x620eed60e750">
+      <atom unit="g/mole" value="57.9353"/>
+    </isotope>
+    <isotope N="60" Z="28" name="Ni600x620eed60e3c0">
+      <atom unit="g/mole" value="59.9308"/>
+    </isotope>
+    <isotope N="61" Z="28" name="Ni610x620eed60e850">
+      <atom unit="g/mole" value="60.9311"/>
+    </isotope>
+    <isotope N="62" Z="28" name="Ni620x620eed60e8a0">
+      <atom unit="g/mole" value="61.9283"/>
+    </isotope>
+    <isotope N="64" Z="28" name="Ni640x620eed60e8f0">
+      <atom unit="g/mole" value="63.928"/>
+    </isotope>
+    <element name="Ni0x620eed60e990">
+      <fraction n="0.680769" ref="Ni580x620eed60e750"/>
+      <fraction n="0.262231" ref="Ni600x620eed60e3c0"/>
+      <fraction n="0.011399" ref="Ni610x620eed60e850"/>
+      <fraction n="0.036345" ref="Ni620x620eed60e8a0"/>
+      <fraction n="0.009256" ref="Ni640x620eed60e8f0"/>
+    </element>
+    <material name="G4_STAINLESS-STEEL0x620eed60de10" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="282.97693634122"/>
+      <D unit="g/cm3" value="8"/>
+      <fraction n="0.746212874621521" ref="Fe0x620eed5dccc0"/>
+      <fraction n="0.169001044311525" ref="Cr0x620eed60e540"/>
+      <fraction n="0.0847860810669534" ref="Ni0x620eed60e990"/>
+    </material>
+    <isotope N="63" Z="29" name="Cu630x620eed60e940">
+      <atom unit="g/mole" value="62.9296"/>
+    </isotope>
+    <isotope N="65" Z="29" name="Cu650x620eed616880">
+      <atom unit="g/mole" value="64.9278"/>
+    </isotope>
+    <element name="Cu0x620eed6168d0">
+      <fraction n="0.6917" ref="Cu630x620eed60e940"/>
+      <fraction n="0.3083" ref="Cu650x620eed616880"/>
+    </element>
+    <material name="G4_Cu0x620eed616740" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="322"/>
+      <D unit="g/cm3" value="8.96"/>
+      <fraction n="1" ref="Cu0x620eed6168d0"/>
+    </material>
+    <isotope N="36" Z="18" name="Ar360x620eed617e20">
+      <atom unit="g/mole" value="35.9675"/>
+    </isotope>
+    <isotope N="38" Z="18" name="Ar380x620eed618160">
+      <atom unit="g/mole" value="37.9627"/>
+    </isotope>
+    <isotope N="40" Z="18" name="Ar400x620eed6181b0">
+      <atom unit="g/mole" value="39.9624"/>
+    </isotope>
+    <element name="Ar0x620eed614d10">
+      <fraction n="0.003365" ref="Ar360x620eed617e20"/>
+      <fraction n="0.000632" ref="Ar380x620eed618160"/>
+      <fraction n="0.996003" ref="Ar400x620eed6181b0"/>
+    </element>
+    <isotope N="12" Z="6" name="C120x620eed6171f0">
+      <atom unit="g/mole" value="12"/>
+    </isotope>
+    <isotope N="13" Z="6" name="C130x620eed617240">
+      <atom unit="g/mole" value="13.0034"/>
+    </isotope>
+    <element name="C0x620eed617290">
+      <fraction n="0.9893" ref="C120x620eed6171f0"/>
+      <fraction n="0.0107" ref="C130x620eed617240"/>
+    </element>
+    <isotope N="16" Z="8" name="O160x620eed617600">
+      <atom unit="g/mole" value="15.9949"/>
+    </isotope>
+    <isotope N="17" Z="8" name="O170x620eed617650">
+      <atom unit="g/mole" value="16.9991"/>
+    </isotope>
+    <isotope N="18" Z="8" name="O180x620eed6176a0">
+      <atom unit="g/mole" value="17.9992"/>
+    </isotope>
+    <element name="O0x620eed6176f0">
+      <fraction n="0.99757" ref="O160x620eed617600"/>
+      <fraction n="0.00038" ref="O170x620eed617650"/>
+      <fraction n="0.00205" ref="O180x620eed6176a0"/>
+    </element>
+    <material name="Ar_CO20x620eed61d080" state="gas">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="148.781031220287"/>
+      <D unit="g/cm3" value="0.001716043"/>
+      <fraction n="0.7" ref="Ar0x620eed614d10"/>
+      <fraction n="0.0818736751294389" ref="C0x620eed617290"/>
+      <fraction n="0.218126324870561" ref="O0x620eed6176f0"/>
+    </material>
+    <isotope N="1" Z="1" name="H10x620eed616fc0">
+      <atom unit="g/mole" value="1.00782503081372"/>
+    </isotope>
+    <isotope N="2" Z="1" name="H20x620eed617010">
+      <atom unit="g/mole" value="2.01410199966617"/>
+    </isotope>
+    <element name="H0x620eed617060">
+      <fraction n="0.999885" ref="H10x620eed616fc0"/>
+      <fraction n="0.000115" ref="H20x620eed617010"/>
+    </element>
+    <isotope N="28" Z="14" name="Si280x620eed6173d0">
+      <atom unit="g/mole" value="27.9769"/>
+    </isotope>
+    <isotope N="29" Z="14" name="Si290x620eed617420">
+      <atom unit="g/mole" value="28.9765"/>
+    </isotope>
+    <isotope N="30" Z="14" name="Si300x620eed617470">
+      <atom unit="g/mole" value="29.9738"/>
+    </isotope>
+    <element name="Si0x620eed6174c0">
+      <fraction n="0.922296077703922" ref="Si280x620eed6173d0"/>
+      <fraction n="0.0468319531680468" ref="Si290x620eed617420"/>
+      <fraction n="0.0308719691280309" ref="Si300x620eed617470"/>
+    </element>
+    <material name="FR40x620eed61ef10" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="91.5911056588797"/>
+      <D unit="g/cm3" value="1.86"/>
+      <fraction n="0.0365435005730534" ref="H0x620eed617060"/>
+      <fraction n="0.435456499426947" ref="C0x620eed617290"/>
+      <fraction n="0.246805068465926" ref="Si0x620eed6174c0"/>
+      <fraction n="0.281194931534074" ref="O0x620eed6176f0"/>
+    </material>
+    <material name="Galactic0x620eed617860" state="gas">
+      <T unit="K" value="2.73"/>
+      <P unit="pascal" value="3e-18"/>
+      <MEE unit="eV" value="19.2"/>
+      <D unit="g/cm3" value="1e-25"/>
+      <fraction n="1" ref="H0x620eed617060"/>
+    </material>
+  </materials>
+
+  <solids>
+    <box lunit="mm" name="Abso0x620eed62c030" x="10" y="10" z="40"/>
+    <box lunit="mm" name="Drift0x620eed62c3d0" x="10" y="10" z="1"/>
+    <box lunit="mm" name="Gap0x620eed62c770" x="10" y="10" z="6"/>
+    <box lunit="mm" name="ReadOut0x620eed62cb20" x="10" y="10" z="1"/>
+    <box lunit="mm" name="Layer0x620eed62bc80" x="10" y="10" z="48"/>
+    <box lunit="mm" name="Cell0x620eed62b8d0" x="10" y="10" z="288"/>
+    <box lunit="mm" name="Row0x620eed62ad10" x="200" y="10" z="288"/>
+    <box lunit="mm" name="Calorimeter0x620eed61e8b0" x="200" y="200" z="288"/>
+    <box lunit="mm" name="World0x620eed61e930" x="240" y="240" z="345.6"/>
+  </solids>
+
+  <structure>
+    <volume name="AbsoLV0x620eed62c150">
+      <materialref ref="G4_STAINLESS-STEEL0x620eed60de10"/>
+      <solidref ref="Abso0x620eed62c030"/>
+    </volume>
+    <volume name="driftBoardLV0x620eed62c4f0">
+      <materialref ref="G4_Cu0x620eed616740"/>
+      <solidref ref="Drift0x620eed62c3d0"/>
+    </volume>
+    <volume name="GapLV0x620eed62c870">
+      <materialref ref="Ar_CO20x620eed61d080"/>
+      <solidref ref="Gap0x620eed62c770"/>
+    </volume>
+    <volume name="ROBoardLV0x620eed62cc00">
+      <materialref ref="FR40x620eed61ef10"/>
+      <solidref ref="ReadOut0x620eed62cb20"/>
+    </volume>
+    <volume name="Layer0x620eed62bda0">
+      <materialref ref="Galactic0x620eed617860"/>
+      <solidref ref="Layer0x620eed62bc80"/>
+      <physvol name="Abso0x620eed62c2c0">
+        <volumeref ref="AbsoLV0x620eed62c150"/>
+        <position name="Abso0x620eed62c2c0_pos" unit="mm" x="0" y="0" z="-4"/>
+      </physvol>
+      <physvol name="Drift0x620eed62c620">
+        <volumeref ref="driftBoardLV0x620eed62c4f0"/>
+        <position name="Drift0x620eed62c620_pos" unit="mm" x="0" y="0" z="16.5"/>
+      </physvol>
+      <physvol name="Gap0x620eed62c9a0">
+        <volumeref ref="GapLV0x620eed62c870"/>
+        <position name="Gap0x620eed62c9a0_pos" unit="mm" x="0" y="0" z="20"/>
+      </physvol>
+      <physvol name="ReadOut0x620eed62cd30">
+        <volumeref ref="ROBoardLV0x620eed62cc00"/>
+        <position name="ReadOut0x620eed62cd30_pos" unit="mm" x="0" y="0" z="23.5"/>
+      </physvol>
+    </volume>
+    <volume name="Cell0x620eed62b9f0">
+      <materialref ref="Galactic0x620eed617860"/>
+      <solidref ref="Cell0x620eed62b8d0"/>
+      <replicavol number="6">
+        <volumeref ref="Layer0x620eed62bda0"/>
+        <replicate_along_axis>
+          <direction z="1"/>
+          <width unit="mm" value="48"/>
+          <offset unit="mm" value="0"/>
+        </replicate_along_axis>
+      </replicavol>
+    </volume>
+    <volume name="Row0x620eed62ae30">
+      <materialref ref="Galactic0x620eed617860"/>
+      <solidref ref="Row0x620eed62ad10"/>
+      <replicavol number="20">
+        <volumeref ref="Cell0x620eed62b9f0"/>
+        <replicate_along_axis>
+          <direction x="1"/>
+          <width unit="mm" value="10"/>
+          <offset unit="mm" value="0"/>
+        </replicate_along_axis>
+      </replicavol>
+    </volume>
+    <volume name="Calorimeter0x620eed616240">
+      <materialref ref="Galactic0x620eed617860"/>
+      <solidref ref="Calorimeter0x620eed61e8b0"/>
+      <replicavol number="20">
+        <volumeref ref="Row0x620eed62ae30"/>
+        <replicate_along_axis>
+          <direction y="1"/>
+          <width unit="mm" value="10"/>
+          <offset unit="mm" value="0"/>
+        </replicate_along_axis>
+      </replicavol>
+    </volume>
+    <volume name="World0x620eed5bf970">
+      <materialref ref="Galactic0x620eed617860"/>
+      <solidref ref="World0x620eed61e930"/>
+      <physvol name="Calorimeter0x620eed62ac00">
+        <volumeref ref="Calorimeter0x620eed616240"/>
+      </physvol>
+    </volume>
+  </structure>
+
+  <setup name="Default" version="1.0">
+    <world ref="World0x620eed5bf970"/>
+  </setup>
+
+</gdml>

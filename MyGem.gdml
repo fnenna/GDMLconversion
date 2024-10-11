@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+  <define>
+    <position name="Kapton_1inGempos" x="0" y="0" z="0" unit="cm"/>
+    <position name="Electrode_2inGempos" x="0" y="0" z="0.0275" unit="cm"/>
+    <position name="Electrode_3inGempos" x="0" y="0" z="-0.0275" unit="cm"/>
+    <position name="Gem_1inTOPpos" x="0" y="0" z="0" unit="cm"/>
+    <position name="Gem_2inTOPpos" x="-0.14000000000000001" y="0" z="0" unit="cm"/>
+    <position name="Gem_3inTOPpos" x="0.14000000000000001" y="0" z="0" unit="cm"/>
+    <position name="Gem_4inTOPpos" x="-0.070000000000000007" y="0.12124355652982141" z="0" unit="cm"/>
+    <position name="Gem_5inTOPpos" x="0.070000000000000007" y="0.12124355652982141" z="0" unit="cm"/>
+    <position name="Gem_6inTOPpos" x="-0.070000000000000007" y="-0.12124355652982141" z="0" unit="cm"/>
+    <position name="Gem_7inTOPpos" x="0.070000000000000007" y="-0.12124355652982141" z="0" unit="cm"/>
+  </define>
+  <materials>
+    <material name="Vacuum" Z="1">
+      <D unit="g/cm3" value="0"/>
+      <atom unit="g/mole" value="0"/>
+    </material>
+    <material name="Kapton" Z="6">
+      <D unit="g/cm3" value="1.4199999999999999"/>
+      <atom unit="g/mole" value="12"/>
+    </material>
+    <material name="Copper" Z="29">
+      <D unit="g/cm3" value="8.9399999999999995"/>
+      <atom unit="g/mole" value="63"/>
+    </material>
+  </materials>
+  <solids>
+    <box name="TOP" x="0.28000000000000003" y="0.28000000000000003" z="0.040000000000000001" lunit="cm"/>
+    <box name="K" x="0.14000000000000001" y="0.14000000000000001" z="0.050000000000000003" lunit="cm"/>
+    <polycone name="H" startphi="0" deltaphi="360" aunit="deg" lunit="cm">
+      <zplane z="-0.025000000000000001" rmin="0" rmax="0.035000000000000003"/>
+      <zplane z="0" rmin="0" rmax="0.025000000000000001"/>
+      <zplane z="0.025000000000000001" rmin="0" rmax="0.035000000000000003"/>
+    </polycone>
+    <subtraction name="G">
+      <first ref="K"/>
+      <second ref="H"/>
+    </subtraction>
+    <box name="M" x="0.14000000000000001" y="0.14000000000000001" z="0.0050000000000000001" lunit="cm"/>
+    <tube name="T" rmin="0" rmax="0.035000000000000003" z="0.0050000000000000001" startphi="0" deltaphi="360" aunit="deg" lunit="cm"/>
+    <subtraction name="E">
+      <first ref="M"/>
+      <second ref="T"/>
+    </subtraction>
+  </solids>
+  <structure>
+    <volume name="Kapton0x1">
+      <materialref ref="Kapton"/>
+      <solidref ref="G"/>
+    </volume>
+    <volume name="Electrode">
+      <materialref ref="Copper"/>
+      <solidref ref="E"/>
+    </volume>
+    <assembly name="Gem">
+      <physvol name="Kapton_1" copynumber="1">
+        <volumeref ref="Kapton0x1"/>
+        <positionref ref="Kapton_1inGempos"/>
+      </physvol>
+      <physvol name="Electrode_2" copynumber="2">
+        <volumeref ref="Electrode"/>
+        <positionref ref="Electrode_2inGempos"/>
+      </physvol>
+      <physvol name="Electrode_3" copynumber="3">
+        <volumeref ref="Electrode"/>
+        <positionref ref="Electrode_3inGempos"/>
+      </physvol>
+    </assembly>
+    <volume name="TOP">
+      <materialref ref="Vacuum"/>
+      <solidref ref="TOP"/>
+      <physvol name="Gem_1" copynumber="1">
+        <volumeref ref="Gem"/>
+        <positionref ref="Gem_1inTOPpos"/>
+      </physvol>
+      <physvol name="Gem_2" copynumber="2">
+        <volumeref ref="Gem"/>
+        <positionref ref="Gem_2inTOPpos"/>
+      </physvol>
+      <physvol name="Gem_3" copynumber="3">
+        <volumeref ref="Gem"/>
+        <positionref ref="Gem_3inTOPpos"/>
+      </physvol>
+      <physvol name="Gem_4" copynumber="4">
+        <volumeref ref="Gem"/>
+        <positionref ref="Gem_4inTOPpos"/>
+      </physvol>
+      <physvol name="Gem_5" copynumber="5">
+        <volumeref ref="Gem"/>
+        <positionref ref="Gem_5inTOPpos"/>
+      </physvol>
+      <physvol name="Gem_6" copynumber="6">
+        <volumeref ref="Gem"/>
+        <positionref ref="Gem_6inTOPpos"/>
+      </physvol>
+      <physvol name="Gem_7" copynumber="7">
+        <volumeref ref="Gem"/>
+        <positionref ref="Gem_7inTOPpos"/>
+      </physvol>
+    </volume>
+  </structure>
+  <setup name="default" version="1.0">
+    <world ref="TOP"/>
+  </setup>
+</gdml>
