@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<VTKFile type="PolyData" version="0.1" byte_order="LittleEndian" header_type="UInt32" compressor="vtkZLibDataCompressor">
+  <PolyData>
+    <Piece NumberOfPoints="44" NumberOfVerts="0" NumberOfLines="0" NumberOfStrips="0" NumberOfPolys="88">
+      <PointData Scalars="Scalars_" TCoords="TCoords_">
+        <DataArray type="Float32" Name="TCoords_" NumberOfComponents="2" format="binary" RangeMin="0" RangeMax="0">
+          AQAAAACAAABgAQAADQAAAA==eJxjYBgFtAQAAWAAAQ==
+          <InformationKey name="L2_NORM_RANGE" location="vtkDataArray" length="2">
+            <Value index="0">
+              0
+            </Value>
+            <Value index="1">
+              0
+            </Value>
+          </InformationKey>
+        </DataArray>
+        <DataArray type="UInt8" Name="Scalars_" NumberOfComponents="4" format="binary" RangeMin="254" RangeMax="254">
+          AQAAAACAAACwAAAADAAAAA==eJyrrx9aAAAxmldR
+          <InformationKey name="L2_NORM_RANGE" location="vtkDataArray" length="2">
+            <Value index="0">
+              254
+            </Value>
+            <Value index="1">
+              254
+            </Value>
+          </InformationKey>
+        </DataArray>
+      </PointData>
+      <CellData>
+      </CellData>
+      <Points>
+        <DataArray type="Float64" Name="Points" NumberOfComponents="3" format="binary" RangeMin="0.35089171103825" RangeMax="0.9902650991729566">
+          AQAAAACAAAAgBAAAzwAAAA==eJydkzEOwjAMRX0CzsDAMSr5KkwVR2Ds2JktGzMSAwMbksUJWBA3oAuXoKlw9ftxVKldrD79fP84iYis35enikjz2dxzPaaUrK/bun7lf/+cN6fzQ6E6Rx+b8VGJ+zI34FFfXO/rxpwBH+ruuq8gl+sjjjkif+aez+R/PhFfos/9cH84598+2orOhfVa0LO/FXz4XDBvlH+ih7lN9AEf9Kv2cMO8rg843wf2Z873ivMzX6Lv83UGFTlWOMdRX+L0vjqd4VrIw5x99AvGTnUE
+          <InformationKey name="L2_NORM_RANGE" location="vtkDataArray" length="2">
+            <Value index="0">
+              0.35089171104
+            </Value>
+            <Value index="1">
+              0.99026509917
+            </Value>
+          </InformationKey>
+        </DataArray>
+      </Points>
+      <Verts>
+        <DataArray type="Int64" Name="connectivity" format="binary" RangeMin="1e+299" RangeMax="-1e+299">
+          AAAAAACAAAAAAAAA
+        </DataArray>
+        <DataArray type="Int64" Name="offsets" format="binary" RangeMin="1e+299" RangeMax="-1e+299">
+          AAAAAACAAAAAAAAA
+        </DataArray>
+      </Verts>
+      <Lines>
+        <DataArray type="Int64" Name="connectivity" format="binary" RangeMin="1e+299" RangeMax="-1e+299">
+          AAAAAACAAAAAAAAA
+        </DataArray>
+        <DataArray type="Int64" Name="offsets" format="binary" RangeMin="1e+299" RangeMax="-1e+299">
+          AAAAAACAAAAAAAAA
+        </DataArray>
+      </Lines>
+      <Strips>
+        <DataArray type="Int64" Name="connectivity" format="binary" RangeMin="1e+299" RangeMax="-1e+299">
+          AAAAAACAAAAAAAAA
+        </DataArray>
+        <DataArray type="Int64" Name="offsets" format="binary" RangeMin="1e+299" RangeMax="-1e+299">
+          AAAAAACAAAAAAAAA
+        </DataArray>
+      </Strips>
+      <Polys>
+        <DataArray type="Int64" Name="connectivity" format="binary" RangeMin="0" RangeMax="43">
+          AQAAAACAAABACAAAWAEAAA==eJx1lEmWwjAQQ4EGmjlhhjCnQzok978fC+ov+Dy80StJNhVhV9F6rTLwP/Ae2ARWwkL+WvtKYSFfI/9DvuqLr5b/pH2NfKvAuXj8a/lq8Wv5t0L4vRD+oPoknn4v0uFv0uH/pLcDyYn8OuJZI/ED1e13+4fOuZxTSp+IxzcTjy8Vj4/v+FFf8Ln0ZSD3kvM24vEdxWfat5AfPpW+0zn8XiYeH79bST+Lx3cVjy8Xj28cyDvxu4PvBvald4X4e0L4XyH8UPVYPH1NpcMn0uHn0nkP9M/30D+L+0P/Hen0P5BOvyPp9DuRTr8z6al4+mf+cM+4V8yfjXTmz0468yeTzrw5SmfenKUzb67Sc/HMH/ImX94ji//BuVM7d2rnTu3cqZ07NTlzb8jb7xveuVM7d2rnTu3cqZ07tXOnJmfuOXl7Lvreo3s/3+1cEuncV/ZzHvfgCVZWGGE=
+        </DataArray>
+        <DataArray type="Int64" Name="offsets" format="binary" RangeMin="3" RangeMax="264">
+          AQAAAACAAADAAgAAvAAAAA==eJwtxVtEAwAAAMAemo2IGGOMGCNGjIiIESNiRETEiDFGxIiIiDHGiIiIERERESPGGDFijBEREWOMiKiP3f3c9MRYwCHPes7zDjviqGNecNwJLzrpJae87BWves1przvjDW866y1ve8e73nPO+8674KIPfOiSj3zsE5/6zGVXXHXN577wpa987bpvfOs73/vBj35yw89uuuW2X9zxq7vuue83v/vDn/7ywEOP/O0f//rPU5PjZxz0P9sjKug=
+        </DataArray>
+      </Polys>
+    </Piece>
+  </PolyData>
+</VTKFile>
