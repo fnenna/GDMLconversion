@@ -11,17 +11,20 @@ v = pyg4ometry.visualisation.VtkViewerNew()
 #for solidVolume in registry.solidDict.values():
 for logical_volume in registry.logicalVolumeDict.values():
     color =  colors[i]
+    v = pyg4ometry.visualisation.VtkViewerColouredNew(color)
     #vColoured = pyg4ometry.visualisation.VtkViewerColouredNew(color)
     print(f"Name: {logical_volume.name}")
-    logical_volume.materialName = logical_volume.name
+    logical_volume.material.name = "None"#logical_volume.name
     print(logical_volume.material)
+    print(logical_volume.solid)
     #v.addSolid(solidVolume, colour = color)
-    v.addLogicalVolume(logical_volume.solid, "G4_Air", logical_volume.name)
+    v.addLogicalVolume(logical_volume)
+    #sssssv.addLogicalVolume(element)
     #v.setMaterial(logical_volume.material)
     #v.setVolumeColor(logical_volume,color)
     
     v.buildPipelinesAppend()
-    v.exportVTPScene(f"hcal_scene_part{i}.vtp")
+    v.exportVTPScene(f"new_hcal_scene_part{i}.vtp")
     v.clear()
     print(i)
     i+=1
